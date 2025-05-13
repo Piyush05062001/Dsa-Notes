@@ -1,0 +1,19 @@
+def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        result = []
+        def backtrack(index, target, curr):
+            if target == 0:
+                result.append(curr[:]) 
+                return
+            if target < 0 or index>=len(candidates):
+                return
+            backtrack( index, target - candidates[index], curr + [candidates[index]])  \\ include the current element 
+            backtrack( index +1, target, curr) \\ exclude the current element and increment the index
+        backtrack( 0, target, [])
+        return result    
+
+DRY RUN FOR ABOVE CODE
+for ex [2,3]
+first we include [2] index = 0
+first we include [2,2] index = 0
+
+        
