@@ -12,8 +12,16 @@ def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         return result    
 
 DRY RUN FOR ABOVE CODE
-for ex [2,3]
-first we include [2] index = 0
-first we include [2,2] index = 0
+for ex [2,3] target = 6
+[]
+ ├── [2]
+ │   ├── [2,2]
+ │   │   ├── [2,2,2] ✅
+ │   │   └── skip
+ │   └── [2,3] ❌
+ └── [3]
+     ├── [3,3] ✅
+     └── skip
+
 
         
