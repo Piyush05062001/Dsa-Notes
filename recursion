@@ -26,5 +26,49 @@ for ex [2,3] target = 6
      ├── [3,3] ✅
      └── skip
 
-
+Q2. Combinationsum-2
         
+def combinationSUmtwo(arr, target):
+        res = []
+        ds = []
+        index = 0
+        def backtrack(index, target):
+                if target == 0: // target equals zero return
+                        res.append(ds[:])
+                        return
+                for i in range(index, len(arr)):
+                        if i> index and arr[i] == arr[i-1]: checks wheather current elements not repeat itself
+                                continue
+                        if arr[i]>target: if target is less than arr[i] that means no sequence to break the loop
+                                break
+                        ds.append(arr[i]) // pick
+                        backtrack(i+1, target - arr[i])
+                        ds.pop() //not pick 
+        backtrack(0, target)
+        return res
+                
+arr = [1,1,1,2,2]
+target = 3
+print(combinationSUmtwo(arr, target))
+
+
+Q3. Subset=2
+
+class Solution:
+    def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
+        def findSubsets(ind: int, ds: List[int], ans: List[List[int]]):
+            ans.append(ds[:])
+            for i in range(ind, len(nums)):
+                if i > ind and nums[i] == nums[i - 1]:
+                    continue
+                ds.append(nums[i])
+                findSubsets(i + 1, ds, ans)
+                ds.pop()
+
+        nums.sort()
+        ans = []
+        findSubsets(0, [], ans)
+        return ans
+
+
+
