@@ -1,0 +1,14 @@
+| Week | Topics                                      | Focus Areas & Tips                                           |
+| ---- | ------------------------------------------- | ------------------------------------------------------------ |
+| 1    | **Arrays & Strings**                        | Basics, sorting, prefix sum, two-pointer, sliding window     |
+| 2    | **Hashing** & Review Arrays                 | HashMaps, frequency maps, sets, anagram problems             |
+| 3    | **Recursion** + Intro to Backtracking       | Factorials, subsets, permutations, N-Queens                  |
+| 4    | **Linked Lists** + Practice Backtracking    | Singly/doubly/circular LL, reversal, fast/slow pointer       |
+| 5    | **Stacks & Queues**                         | Infix/postfix, Next Greater Element, monotonic stack         |
+| 6    | **Trees (Binary Trees, BST)**               | Traversals, height, LCA, validate BST                        |
+| 7    | **Heaps & Priority Queues** + Tree Problems | Min/Max heap, top-K elements, heapify                        |
+| 8    | **Graphs (DFS, BFS, Connected Components)** | Adjacency list/matrix, visited arrays, recursive & iterative |
+| 9    | **Greedy Algorithms** + Graph Problems      | Activity selection, Huffman coding, interval problems        |
+| 10   | **Dynamic Programming (1/2)**               | Memoization, tabulation, knapsack, fibonacci, LIS            |
+| 11   | **Dynamic Programming (2/2)**               | Partition problems, MCM, LCS, DP on grids                    |
+| 12   | **Tries, Bit Manipulation, Union-Find**     | Word search, XOR, DSU, path compression                      |
