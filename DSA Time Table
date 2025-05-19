@@ -2,7 +2,7 @@
 | ---- | ------------------------------------------- | ------------------------------------------------------------ |
 | 1    | **Arrays & Strings**                        | Basics, sorting, prefix sum, two-pointer, sliding window     |
 | 2    | **Hashing** & Review Arrays                 | HashMaps, frequency maps, sets, anagram problems             |
-| 3    | **Recursion** + Intro to Backtracking       | Factorials, subsets, permutations, N-Queens                  |
+| 3    | **Recursion** + Intro to Backtracking       | Factorials, subsets, permutations, N-Queens                  |  --- In Progress
 | 4    | **Linked Lists** + Practice Backtracking    | Singly/doubly/circular LL, reversal, fast/slow pointer       |
 | 5    | **Stacks & Queues**                         | Infix/postfix, Next Greater Element, monotonic stack         |
 | 6    | **Trees (Binary Trees, BST)**               | Traversals, height, LCA, validate BST                        |
