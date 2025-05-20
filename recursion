@@ -54,21 +54,20 @@ print(combinationSUmtwo(arr, target))
 
 Q3. Subset=2
 
-class Solution:
-    def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
-        def findSubsets(ind: int, ds: List[int], ans: List[List[int]]):
-            ans.append(ds[:])
-            for i in range(ind, len(nums)):
-                if i > ind and nums[i] == nums[i - 1]:
-                    continue
-                ds.append(nums[i])
-                findSubsets(i + 1, ds, ans)
-                ds.pop()
-
-        nums.sort()
-        ans = []
-        findSubsets(0, [], ans)
-        return ans
+def subsetsWithDup(nums):
+    ans = []
+    def findSubsets(ind, ds, ans):
+        ans.append(ds[:])
+        for i in range(ind, len(nums)):
+            if i>ind and nums[i] == nums[i-1]: // prevent duplicates
+                continue
+            ds.append(nums[i])  // pick and not pick logic
+            findSubsets(ind+1, ds, ans)
+            ds.pop()
+    findSubsets(0, [], ans)
+    return ans
+nums = [1,2,2]
+print(subsetsWithDup(nums))
 
 
 
